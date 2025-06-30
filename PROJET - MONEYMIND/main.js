@@ -1,4 +1,4 @@
-// 🌱 Références aux éléments du DOM
+// Références aux éléments du DOM
 const form = document.getElementById('forme-zone-remplissage');
 const desc = document.getElementById('description');
 const amount = document.getElementById('amount');
@@ -8,17 +8,17 @@ const list = document.getElementById('Liste-de-transactions');
 const balance = document.getElementById('balance');
 const btn = document.getElementById('submit-btn');
 
-// 🧠 Données
+// Données
 let data = JSON.parse(localStorage.getItem('transactions')) || [];
 let editing = null;
 
-// 💾 Sauvegarde
+// Sauvegarde
 const save = () => localStorage.setItem('transactions', JSON.stringify(data));
 
-// 💵 Format montant
+// Format montant
 const format = n => `${Number(n).toLocaleString('fr-FR', { minimumFractionDigits: 2 })} $`;
 
-// 🔁 Affichage
+// Affichage
 function render() {
   
   // Calculer le solde total
@@ -55,7 +55,7 @@ function render() {
   save();
 }
 
-// ➕ Ajouter ou modifier
+// Ajouter ou modifier
 form.addEventListener('submit', e => {
   e.preventDefault();
 
@@ -83,7 +83,7 @@ form.addEventListener('submit', e => {
   render();
 });
 
-// 🖱️ Modifier / Supprimer
+// Modifier / Supprimer
 list.addEventListener('click', e => {
   const i = parseInt(e.target.dataset.i, 10);
 
