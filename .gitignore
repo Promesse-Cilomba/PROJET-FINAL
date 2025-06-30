@@ -1,0 +1,15 @@
+# Dossier de configuration d'outil (ex: Qodo)
+.qodo/
+
+# Fichiers temporaires d'éditeurs
+*.swp
+*.swo
+*.tmp
+*.temp
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de logs
+*.log 
