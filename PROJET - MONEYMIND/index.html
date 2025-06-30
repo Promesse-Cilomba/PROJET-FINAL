@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoneyMind</title>
+  cc
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+<body>
+  
+   <div class="zone-de-remplissage">
+    <div class="En-tête">
+      <div class="header">
+        <h1>MoneyMind 💰</h1>
+      </div>
+      
+      <div id="balance">Solde : 0,00 $</div>
+
+      <form id="forme-zone-remplissage">
+        <input type="text" id="description" placeholder="Description de la transaction" required/>
+
+        <input type="number" id="amount" placeholder="Montant" step="any" required min="0"/>
+        <select id="type" required>
+          <option value="Revenu">Revenu 💲</option>
+          <option value="Dépense">Dépense 💳</option>
+        </select>
+        <select id="Categories" required>
+          <option value="Categories">Categories</option>
+          <option value="Education">Education 🎓</option>
+          <option value="Alimentation">Alimentation 🍔</option>
+          <option value="Transport">Transport 🚗</option>
+          <option value="Santé">Santé 💊</option>
+          <option value="Shopping">Shopping 🛍️</option>
+          <option value="Loisirs">Loisirs 🎡</option>
+          <option value="Épargne">Épargne 🐷</option>
+          <option value="Logement">Logement 🏠</option>
+          <option value="Autres">Autres</option>
+        </select>
+
+        <button type="submit" id="submit-btn">Ajouter la transaction</button>
+        </form>
+      </div>
+
+      <div class="espace-transaction">
+        <h2>Transactions</h2>
+
+        <div id="Liste-de-transactions"> 
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
