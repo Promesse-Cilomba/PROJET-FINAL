@@ -106,18 +106,6 @@ form#forme-zone-remplissage button:hover {
   overflow-y: auto;
 }
 
-/* Epaisseur de la barre de défilement */
-#Liste-de-transactions::-webkit-scrollbar {
-  width: 10px;
-}
-#Liste-de-transactions::-webkit-scrollbar-thumb {
-  background-color: #878e93;
-  border-radius: 5px;
-}
-#Liste-de-transactions::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
 .transaction {
   background: #9effc8;
   color: #1a7f37;
@@ -127,9 +115,8 @@ form#forme-zone-remplissage button:hover {
 
   /* On transforme la transaction en conteneur flexible */
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 15px; /* Espace entre la description et le bloc de droite */
+  justify-content: space-between;
 }
 
 /* On s'assure que la description ne déborde pas */
@@ -145,7 +132,11 @@ form#forme-zone-remplissage button:hover {
 .zoneMontant {
   display: flex;
   align-items: center;
-  gap: 10px; /* Espace entre le montant, et les boutons */
+  gap: 0.5em;
+}
+
+.zoneMontant span {
+  white-space: nowrap;
 }
 
 .edit-btn, .delete-btn {
