@@ -1,5 +1,5 @@
-# Dossier de configuration d'outil (ex: Qodo)
-.qodo/
+# Dossier de configuration d'outil
+.vscode/
 
 # Fichiers temporaires d'éditeurs
 *.swp
