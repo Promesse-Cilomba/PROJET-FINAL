@@ -103,5 +103,4 @@ list.addEventListener('click', e => {
   }
 });
 
-// 🚀 Lancement
 render();
